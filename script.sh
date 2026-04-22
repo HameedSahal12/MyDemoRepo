@@ -9,4 +9,8 @@ sudo systemctl start httpd
 sudo systemctl enable httpd
 
 # Create simple web page
-echo "<h1>Deployed via CodePipeline</h1>" | sudo tee /var/www/html/index.html
+echo "<html><body style='text-align:center;font-family:Arial'>
+<h1>🚀 DevSecOps Pipeline Working!</h1>
+<h2>Deployed via AWS CodePipeline</h2>
+<p>EC2 + Apache + GitHub Integration</p>
+</body></html>" | sudo tee /var/www/html/index.html
